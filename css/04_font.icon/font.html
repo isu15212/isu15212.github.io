@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* body{
+      font-size: 30px;
+    } */
+    h1{
+      font-size: 4em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    h2{
+      font-size: 1.8em;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    p{
+      font-size: 20px;
+      border: 1px solid black;
+      outline: 5px dashed green;
+      outline-offset: 5px;
+      margin: 25px;
+      padding: 10px;
+    }
+    p.italic{
+      font-size: initial;
+    }
+    p.oblique{
+      font-size: oblique;
+    }
+    p.small-caps{
+      font-variant: small-caps;
+    }
+    p.bold_700{
+      font-weight: 700;
+    }
+    p.bolder{
+      font-weight: bolder;
+    }
+    p.ligher{
+      font-weight: lighter;
+    }
+  </style>
+</head>
+<body>
+  <h1>today is wednesday</h1>
+  <h2>today is the day to study</h2>
+  <p>happy</p>
+  <p class="italic">italic</p>
+  <p class="oblique">oblique</p>
+  <p class="small-caps">small-caps</p>
+  <p class="bold_700">bold_700</p>
+  <p class="bolder">bolder</p>
+  <p class="lighter">lighter</p>
+
+  <h1>가변 폰트 사이즈</h1>
+  <p>viewport는 브라우저 윈도우 크기. <br>
+    1vw는 viewprot 넓이는 1%를 의미. 브라우저 넓이와 50cm라면
+    1vw는 0.5cm이다.
+  </p>
+
+  <h3 style="font-size: 5vw;">Responsive text bye window width </h3>
+  <h3 style="font-size: 5vh;">Responsive text bye window height </h3>
+  <h3 style="font-size: 5vmin;">Responsive text bye window minsize(가로세로 중 작은 쪽에 비례) </h3>
+  <h3 style="font-size: 5vmax;">Responsive text bye window maxsize(가로세로 중 큰 쪽에 비례) </h3>
+
+</body>
+</html>

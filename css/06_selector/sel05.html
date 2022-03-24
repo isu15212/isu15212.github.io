@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p::first-line{
+      color: red; font-size: 20px;
+
+    }
+    p::first-letter{
+      font-size: 100px;
+    }
+    h2::before, h2::after{
+      content: url(/images/1.gif);
+    }
+    ::marker{color: red; font-size: 50px;}
+
+    ::selection{
+      color: red; background-color: yellow;
+    }
+    
+  </style>
+</head>
+<body>
+  <h2>pseudo=elements selectors</h2>
+  <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+    <h2>first-line 적용 속성</h2>
+    <p>font properties, color properties, background properties, word-spacing, letter-spacing, text-decoration, vertical-align, text-transform, line-height, clear</p>
+
+    <h2>before , after</h2>
+
+    <h3>::marker - 페이지 내 모든 리스트 글머리 기호에 적용</h3>
+    <ul>
+      <li>coffee</li>
+      <li>tea</li>
+      <li>milk</li>
+    </ul> 
+
+    <ol class="num">
+      <li>first</li>
+      <li>sec</li>
+      <li>third</li>
+    </ol>
+
+    <h3>::selection - 선택되는 텍스트에 효과적용</h3>
+
+</body>
+</html>

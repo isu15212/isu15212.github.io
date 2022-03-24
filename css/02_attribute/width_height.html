@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h2 {
+      background-color: teal;
+      color: white;
+      padding: 10px;
+    }
+
+    div {
+      margin: 10px;
+      height: 50px;
+    }
+
+    .a {
+      width: 100%;
+      border: 1px solid black;
+    }
+
+    .b {
+      width: 50%;
+      height: 100px;
+      background-color: tomato;
+    }
+
+    .c {
+      width: 50%;
+      height: 50%;
+      background-color: palegreen;
+      overflow: scroll;
+    }
+
+    .d {
+      width: 700px;
+      height: 100px;
+      background-color: coral;
+      overflow-y: scroll;
+    }
+
+    .max_wi {
+      max-width: 700px;
+      height: 200px;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>width &amp; height</h2>
+
+  <div class="a">창 넓이의 100% : 가변 너비</div>
+  <div class="b">창 넓이의 50% : 가변 너비 고정 높이</div>
+  <div class="c">창 넓이의 50%, 높이 50% : 가변 너비 고정 높이 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+    officia deserunt mollit anim id est laborum.</div>
+
+  <div class="a">창 넓이의 100% : 가변 너비</div>
+
+  <div class="d">창 넓이의 50% : 가변 너비 고정 높이 <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+    deserunt mollit anim id est laborum.</div>
+
+  <div class="max_wi">최대치 가변: 700px, 높이 고정 200px</div>
+
+  <a href="#" style="width: 500px;">인라인 태그에 width, height 적용 안됨ㅋㅋㅋ</a>
+  <a href="#" style="width: 500px;">재미있네ㅋㅋㅋ</a>
+</body>
+
+</html>

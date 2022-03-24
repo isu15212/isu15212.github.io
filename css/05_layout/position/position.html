@@ -1,0 +1,170 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .pos {
+      background-color: antiquewhite;
+      position: static;
+    }
+
+    li {
+      padding: 5px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      border: 1px solid red;
+      margin-bottom: 5px;
+    }
+
+    .static {
+      position: static;
+      background-color: blueviolet;
+    }
+
+    .relative {
+      position: relative;
+      background-color: tomato;
+      top: 100px;
+      left: 250px;
+    }
+
+    .absolute {
+      position: absolute;
+      background-color: azure;
+      top: 50px;
+      left: 300px;
+      /* overflow: hidden; */
+    }
+
+    .rel_absolute {
+      width: 100px;
+      height: 50px;
+      background-color: tan;
+      top: 100px;
+      left: 30px;
+      position: absolute;
+    }
+
+    .fixed {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: teal;
+      height: 200px;
+
+      border: 50%;
+    }
+
+    .sticky {
+      width: 100;
+      height: 20px;
+      background-color: chocolate;
+      position: sticky;
+      top: 0;
+
+    }
+
+    #long {
+      width: 50px;
+      height: 1000px;
+      margin: auto;
+      background-color: beige;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>position</h1>
+  <div class="pos">
+    <h3>특정 요소의 위치를 정하는 다섯 가지 방법</h3>
+    <ul>
+      <li>static: 특정 위치의 지정 없이 본래 흐름 상의 위치</li>
+      <li>relative: 자신의 본해 위치에 대한 상대적 위치</li>
+      <li>absolute: 가장 가까이 위치한, 특정 위치로 지정된, 블로형
+        조상에 대한 상대적 위치다</li>
+      <li>fixed: viewport에 대한 상대적 위치에 고정</li>
+      <li>sticky: 사용자의 스크롤 위치에 고정</li>
+    </ul>
+  </div>
+  <div class="box static">static</div>
+  <div class="box relative">relative
+    <div class="box rel_absolute">
+      rel_absolute
+    </div>
+  </div>
+  <div class="box absolute">absolute</div>
+  <div class="box sticky"><a href="#">stick</a></div>
+
+  <div id="long"></div>
+</body>
+</html>
+
+
+ -->
+
+
+
+정답
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pos{background-color: antiquewhite; 
+            position: static; }
+        li{padding: 5px; }
+        .box{width: 200px; height: 200px; text-align: center; border: 1px solid red; margin-bottom: 5px;}
+        .static{position: static; background-color: blueviolet;}
+        .relative{position: relative; background-color: tomato; top:-100px; left: 250px; 
+            /* overflow: hidden; */
+        }
+        .absolute{position: absolute; background-color: azure; top: 50px; left:300px}
+        .rel_absolute{position: absolute; width: 100px; height: 50px; background-color: tan;
+        top: 100px; left: 130px}
+        .fixed{
+            position: fixed; bottom: 10px; right: 10px; background-color: teal; 
+            width: 100px; height: 100px; border-radius: 50%; line-height: 100px; color: white; z-index: 9999;
+        }
+        .sticky{width:100%; height: 30px; background-color: chocolate; 
+            position: -webkit-sticky;
+            position: -moz-sticky;
+            position: sticky; 
+            top:10px;
+        }
+        #long{width: 50px; height: 1000px; background-color: beige;
+        margin: auto;}
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+    <div class="pos">
+        <h3>특정 요소의 위치를 정하는 다섯 가지 방법</h3>
+        <ul>
+            <li>static: 특정 위치의 지정 없이 본래 흐름 상의 위치</li>
+            <li>relative: 자신의 본래 위치에 대한 상대적 위치</li>
+            <li>absolute: 가장 가까이 위치한, 특정 위치로 지정된, 블록형 조상에 대한 상대적 위치</li>
+            <li>fixed: viewport에 대한 상대적 위치에 고정</li>
+            <li>sticky: 사용자의 스크롤 위치에 고정</li>
+        </ul>
+    </div>
+    <div class="box static">static</div>
+    <div class="box relative">relative
+        <div class="box rel_absolute">rel_absolute</div>
+    </div>
+    <div class="box absolute">absolute</div>
+    <div class="box fixed"><a href="#">fixed</a></div>
+    <div class="box sticky">sticky</div>
+    <div id="long">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+</body>
+</html>
