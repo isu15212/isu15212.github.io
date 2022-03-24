@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "맑은 고딕", sans-serif;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+      background-color: darkgoldenrod;
+      color: aliceblue;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+      margin-top: 5px;
+    }
+
+    .column {
+      padding: 0 4px;
+      max-width: 25%;
+      flex: 25%;
+    }
+
+    .column img {
+      border: 1px solid black;
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+    @media(max-width: 820px) {
+      .column{
+        max-width: 50%;
+        flex: 50%;
+      }
+    }
+    @media(max-width: 600px) {
+      .column{
+        max-width: 100%;
+        flex: 1000%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>반응형 이미지 갤러리</h1>
+    <p>브라우저 창 크기를 조절해보세요</p>
+  </div>
+  <!-- photo grid -->
+  <div class="row">
+    <div class="column">
+      <img src="/images/w3images/img_flower.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/img_chania.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/falls2.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/mist.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/mountainskies.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/wedding.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/rocks.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/nature.jpg" alt="" style="width: 100%;">
+    </div>
+
+    <div class="column">
+      <img src="/images/w3images/falls2.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/mountainskies.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/img_flower.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/mist.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/mountainskies.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/wedding.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/nature.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/rocks.jpg" alt="" style="width: 100%;">
+    </div>
+
+    <div class="column">
+      <img src="/images/w3images/falls2.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/img_chania.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/img_flower.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/nature.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/mountainskies.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/rocks.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/wedding.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/mist.jpg" alt="" style="width: 100%;">
+    </div>
+
+    <div class="column">
+      <img src="/images/w3images/falls2.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/mountainskies.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/img_flower.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/mist.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/mountainskies.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/wedding.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/nature.jpg" alt="" style="width: 100%;">
+      <img src="/images/w3images/rocks.jpg" alt="" style="width: 100%;">
+    </div>
+  </div>
+</body>
+
+</html>

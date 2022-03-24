@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: skyblue;
+            border: 1px solid green;
+            margin-bottom: 10px;
+        }
+#translate{transition: 1s ease-in-out;}
+#translate:hover{
+    transform: translate(250px, 50px);
+}
+#skew{transition: 1s ease-in-out;}
+#skew:hover{
+    transform: skewX(-100deg);
+}
+#scale{transition: 0.5s ease-in-out;}
+#scale:hover{
+    transform: scale(0.5, 0.5);
+}
+#rotate{transition: 0.5s ease-in-out;}
+#rotate:hover{
+    transform: rotateY(90deg) rotateZ(90deg)
+}
+#matrix{transition: 1s ease-in-out;}
+#matrix:hover{
+    transform: matrix(2, -0.3, 0, 3, 200, 150)
+}
+    </style>
+</head>
+
+<body>
+    <h1>Transform</h1>
+    <div id="translate">이동</div>
+    <div id="skew">비스듬</div>
+    <div id="scale">크기</div>
+    <div id="rotate">돌기</div>
+    <div id="matrix">여러 효과 한 번에</div>
+</body>
+
+</html>

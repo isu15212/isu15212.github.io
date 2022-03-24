@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      height: 100px;
+      border: 1px solid black;
+      margin-bottom: 10px;
+    }
+
+    div#linier {
+      background: linear-gradient(skyblue, blue);
+    }
+
+    div#toLight {
+      background: linear-gradient(to right, skyblue, blue);
+    }
+
+    div#multi {
+      background: linear-gradient(white, pink, orange, red, skyblue, blue);
+    }
+
+    div#angle {
+      background: linear-gradient(150deg, white, pink, orange, red);
+    }
+    div#circle {
+      background: radial-gradient(white, pink, orange, red, skyblue, blue);
+    }
+    div#shape {
+      background: radial-gradient(circle, white, pink, orange, red, skyblue, blue);
+    }
+    div#transparent {
+      background: linear-gradient(to right, rgba(255,0,0,0.1), rgba(255,0,0,0.9)); height: 100px;;
+    }
+    div#photo {
+      background-image: radial-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.9)),url(../../images/unit_Special.jpg);
+    }
+    div#photo {
+      background-image: radial-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)),url(../../images/unit_Special.jpg);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>color_gradient color</h1>
+  <div id="linier"></div>
+  <div id="toLight"></div>
+  <div id="multi"></div>
+  <div id="angle"></div>
+  <div id="circle"></div>
+  <div id="shape"></div>
+  <div id="transparent"></div>
+  <div id="photo"></div>
+</body>
+
+</html>
